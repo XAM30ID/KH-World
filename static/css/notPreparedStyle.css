@@ -8,10 +8,11 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 table{border-collapse:collapse;border-spacing:0}
 *{box-sizing: border-box}
 
-body {
+html {
 	font-family: Yahfie;
 	background-image: url('../images/notPreparedBG.png');
 	background-size: cover;
+	background-position: center;
 }
 
 @font-face {
@@ -20,7 +21,6 @@ body {
     font-weight: 600;
     font-style: normal;
 }
-
 
 /*↓ Стили для Хэдера ↓*/
 .header {
@@ -70,5 +70,46 @@ body {
 	transform: scale(1.1);
 	opacity: .9;
 }
-/*↑ Стили для Хэжера ↑*/
+/*↑ Стили для Хэдера ↑*/
 
+
+/*↓ СТИЛИ ДЛЯ ТЕЛЕФОНА ↓*/
+@media (max-width: 1080px) {
+	/*↓ Стили для Хэдера ↓*/
+	.header {
+		background-color: rgba(0, 0, 0, .6);
+		height: 7vh;
+	}	
+
+	.headerWrapper {
+		height: 7vh;
+		padding: 1vh 8vw;
+	}
+
+	.header_list {
+		justify-content: space-between;
+		font-size: 3vw;
+		margin-top: 1vh;
+	}
+
+	.header_link{
+		color: white;
+		text-decoration-color: rgba(0, 0, 0, 0);
+		text-align: center;
+		transition: .5s;
+	}
+
+	.header_item {
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		margin-top: -.5vh;
+		height: 80%;
+		width: auto;
+		transition: .3s;
+	}
+	/*↑ Стили для Хэдера ↑*/
+}
+/*↑ СТИЛИ ДЛЯ ТЕЛЕФОНА ↑*/
