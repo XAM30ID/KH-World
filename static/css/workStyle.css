@@ -70,7 +70,7 @@ body {
 	transform: scale(1.1);
 	opacity: .9;
 }
-/*↑ Стили для Хэжера ↑*/
+/*↑ Стили для Хэдера ↑*/
 
 
 /*↓ Стили для блока с проектами ↓*/
@@ -125,3 +125,82 @@ body {
 	background-image: url("../images/RPGGameBG.png");
 }
 /*↑ Стили для блока с проектами ↑*/
+
+
+/*↓ СТИЛИ ДЛЯ ТЕЛЕФОНА ↓*/
+@media (max-width: 1080px) {
+	/*↓ Стили для Хэдера ↓*/
+	html {
+	background-image: url('../images/mainBG.png');
+	background-size: cover;
+	}
+	.header {
+		background-color: rgba(0, 0, 0, .6);
+		height: 7vh;
+	}	
+
+	.headerWrapper {
+		height: 7vh;
+		padding: 1vh 8vw;
+	}
+
+	.header_list {
+		justify-content: space-between;
+		font-size: 3vw;
+		margin-top: 1vh;
+	}
+
+	.header_link{
+		color: white;
+		text-decoration-color: rgba(0, 0, 0, 0);
+		text-align: center;
+		transition: .5s;
+	}
+
+	.header_item {
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		margin-top: -.5vh;
+		height: 80%;
+		width: auto;
+		transition: .3s;
+	}
+	/*↑ Стили для Хэжера ↑*/
+	
+	/*↓ Стили для блока с проектами ↓*/
+	.projectsBlockSec {
+		margin-top: 0vh;
+	}
+
+	.projectsWrapper {
+		padding: 2.5vh 8vw;
+	}
+
+	.projectsCont {
+		font-size: 2.25vh;
+		padding: 3vh 5vw;
+	}
+
+	.projectsTitle {
+		font-size: 2.5vh;
+	}
+
+	.projectText {
+		margin-left: 2vw;
+		width: 40vw;
+	}
+
+	.projectPar {
+		margin: 4vh 0;
+	}
+
+	.projectCont {
+		margin-top: 2vh;
+		height: 35vh;
+	}
+	/*↑ Стили для блока с проектами ↑*/
+}
+/*↑ СТИЛИ ДЛЯ ТЕЛЕФОНА ↑*/
