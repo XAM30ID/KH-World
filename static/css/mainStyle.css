@@ -92,7 +92,6 @@ body {
 
 .greetingImg {
 	border-radius: 251.5px 251.5px 0;
-
 }
 
 .greetingWords {
@@ -132,6 +131,7 @@ body {
 	background-color: rgba(0, 0, 0, .6);
 	border-radius: 100px;
 	padding: 2vh 5vw;
+	text-align: center;
 }
 
 .infBtnLink {
