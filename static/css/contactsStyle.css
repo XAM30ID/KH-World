@@ -1,0 +1,202 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+*{box-sizing: border-box}
+
+body {
+	font-family: Yahfie;
+	background-image: url('../images/contactsBackground.png');
+	background-size: cover;
+	background-position: center;
+}
+
+@font-face {
+    font-family: 'Yahfie';
+    src: url('"../fonts/20686.ttf"');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/*↓ Стили для Хэдера ↓*/
+.header {
+	background-color: rgba(0, 0, 0, .6);
+	height: 10vh;
+}	
+
+.headerWrapper {
+	display: inline-flex;
+	width: 100%;	
+	height: 10vh;
+	padding: 2.5vh 15vw;
+}
+
+.header_list {
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
+	font-size: 3vh;
+}
+
+.header_link{
+	color: white;
+	text-decoration-color: rgba(0, 0, 0, 0);
+	transition: .5s;
+}
+
+.header_link:hover {
+	color: rgba(220, 220, 220, 1);
+	text-decoration-color: rgba(200, 200, 200, 1);
+}
+
+.header_nav {
+	width: 100%;
+	height: 100%;
+	padding: 1vh 0;
+}
+
+.logo {
+	margin-top: -1vh;
+	height: 80%;
+	width: auto;
+	transition: .3s;
+}
+
+.logo:hover {
+	transform: scale(1.1);
+	opacity: .9;
+}
+/*↑ Стили для Хэжера ↑*/
+
+/*↓ Стили для ссылок ↓*/
+.contactsSec {
+	margin-top: 12vh;
+}
+
+.contactsWrapper {
+	width: 100%;
+	padding: 0 15vw;
+}
+
+.contactsCont {
+	background-color: rgba(0, 0, 0, .6);
+	color: white;
+	text-align: center;
+	padding: 3vh 5vw;
+}
+
+.contactsList {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contactImage {
+	width: 5vw;
+	float: bottom;
+}
+
+.contactText {
+	writing-mode: tb-rl;
+	margin-left: 1.5vw;     
+	text-orientation: upright; 
+}
+
+.contactLink {
+	text-decoration: none;
+	color: white;	
+	font-size: 2.25vw;
+}
+
+.contactLink:hover {
+	transform: scale(1.1);
+	opacity: .9;
+}
+/*↑ Стили для ссылок ↑*/
+
+
+/*↓ СТИЛИ ДЛЯ ТЕЛЕФОНА ↓*/
+@media (max-width: 1080px) {
+	/*↓ Стили для Хэдера ↓*/
+	.header {
+		background-color: rgba(0, 0, 0, .6);
+		height: 7vh;
+	}	
+
+	.headerWrapper {
+		height: 7vh;
+		padding: 1vh 8vw;
+	}
+
+	.header_list {
+		justify-content: space-between;
+		font-size: 3vw;
+		margin-top: 1vh;
+	}
+
+	.header_link{
+		color: white;
+		text-decoration-color: rgba(0, 0, 0, 0);
+		text-align: center;
+		transition: .5s;
+	}
+
+	.header_item {
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		margin-top: -.5vh;
+		height: 80%;
+		width: auto;
+		transition: .3s;
+	}
+	/*↑ Стили для Хэжера ↑*/
+	
+	/*↓ Стили для блока с контактами ↓*/
+	.contactsSec {
+		margin-top: 3vh;
+	}
+
+	.contactsWrapper {
+		padding: 0 7vw;
+	}
+
+	.contactsCont {
+		padding: 3vh 5vw;
+		height: 50vh;
+	}
+
+	.contactsList {
+		display: block;
+		justify-content: space-between;
+		flex-direction: column;
+		height: 100%;
+		margin-left: 8vw;
+	}
+
+	.contactImage {
+		width: 8vw;
+		float: left;
+		margin-left: -8vw;
+	}
+
+	.contactText {		
+		height: 12.5vh;
+		writing-mode: lr-tb;
+		margin-left: 0;     
+		text-orientation: mixed; 
+	}
+
+	.contactLink {
+		font-size: 8vw;
+		letter-spacing: 2vw;
+	}
+	/*↑ Стили для блока с контактами ↑*/
+}
+/*↑ СТИЛИ ДЛЯ ТЕЛЕФОНА ↑*/
